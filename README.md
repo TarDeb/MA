@@ -56,5 +56,5 @@ This project is [MIT licensed](https://github.com/[your-username]/Image-Processi
 ## Contact
 
 Created by [Your Name] - feel free to contact me!
-
-[Your Email]
+tarek.debich@outlook.com
+debich@dronow.io
