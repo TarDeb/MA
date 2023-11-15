@@ -38,10 +38,10 @@ python main.py
 
 ## Dependencies
 
-- Python 3.x
+- Python  3.11.2
 - PyQt5
 - OpenCV
-- TensorFlow
+- TensorFlow  2.12.1
 - PIL
 - numpy
 
@@ -55,6 +55,6 @@ This project is [MIT licensed](https://github.com/[your-username]/Image-Processi
 
 ## Contact
 
-Created by [Your Name] - feel free to contact me!
+Created by Tarek Debich - feel free to contact me!
 tarek.debich@outlook.com
 debich@dronow.io
