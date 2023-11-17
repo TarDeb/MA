@@ -33,6 +33,7 @@ class NewWindow(QWidget):
         self.layout.addWidget(self.info_label)
         self.setLayout(self.layout)
 
+    
     def run_detection(self):
         # If no image path is provided, get it from a file dialog
         self.image_path, _ = QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files (*.jpg *.jpeg *.png)")
