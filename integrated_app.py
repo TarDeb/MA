@@ -94,6 +94,7 @@ class IntegratedApp(QMainWindow):
         btn_select_input = QPushButton('Select Input Folder', self)
         btn_select_input.setFixedSize(250, 30)
         btn_select_input.clicked.connect(self.set_input_folder)
+       
         btn_select_output = QPushButton('Select Output Folder', self)
         btn_select_output.setFixedSize(250, 30)
         btn_select_output.clicked.connect(self.set_output_folder)
