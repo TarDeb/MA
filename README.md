@@ -24,7 +24,7 @@ To set up this project locally, follow these steps:
    ```bash
    cd Image-Processing-App
    ```
-3. Install required dependencies (ensure you have Python installed):
+3. Install required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
