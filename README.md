@@ -45,9 +45,6 @@ python main.py
 - PIL
 - numpy
 
-## Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/[your-username]/Image-Processing-App/issues) if you want to contribute.
 
 ## License
 
@@ -55,6 +52,6 @@ This project is [MIT licensed](https://github.com/[your-username]/Image-Processi
 
 ## Contact
 
-Created by Tarek Debich - feel free to contact me!
+Created by Tarek Debich 
 tarek.debich@outlook.com
 debich@dronow.io
