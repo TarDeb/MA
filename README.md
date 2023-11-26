@@ -4,7 +4,6 @@
 This application is designed for advanced image processing tasks, with a focus on correcting image distortion and retrieving GPS coordinates from images. Built with Python, it integrates technologies like OpenCV, TensorFlow, PyQt5, and others to deliver a comprehensive tool for image analysis and processing.
 
 ## Features
-
 - Corrects distortion in images using predefined parameters.
 - Retrieves and displays GPS coordinates embedded in images.
 - Processes multiple images in batch mode.
