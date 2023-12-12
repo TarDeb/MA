@@ -10,6 +10,7 @@ This application is designed for advanced image processing tasks, with a focus o
 - Provides a user-friendly GUI for easy interaction.
 - Utilizes TensorFlow for advanced image processing tasks.
 - Displays images and their locations on Google Maps.
+this repository contains model.ipynb
 
 ## Installation
 
