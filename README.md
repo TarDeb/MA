@@ -28,13 +28,6 @@ To set up this project locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-## Usage
-
-To run the application, execute the following command in the project directory:
-```bash
-python main.py
-```
-
 ## Dependencies
 
 - Python  3.11.2
