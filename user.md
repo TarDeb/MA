@@ -10,7 +10,7 @@
 
 ### Acceptance Criteria:
 
-1. **Thermal Image Processing:** The application should be able to open and process thermal images captured by drones, highlighting areas of concern such as hotspots or uneven temperature distributions.
+1. **Thermal Image Processing:** The application should be able to open and process thermal images captured by drones, highlighting areas of concern such as hotspots or uneven temperature distributions
 2. **Defect Classification:** Using machine learning, the app should classify defects in the panels, such as cracks, soiling, or delamination, and display this information in an easily understandable format.
 3. **Geolocation Integration:** The app should utilize the GPS metadata from the images to plot the location of each panel on a map interface, showing where each defect is located within the solar farm.
 4. **User-Friendly Interface:** The GUI should provide intuitive navigation for viewing both thermal and standard images, along with defect details and map overlays.
