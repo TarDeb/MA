@@ -1,9 +1,10 @@
+from utils import *
+from new_window import NewWindow
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QWidget, QFileDialog, QProgressBar
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtCore import QUrl
 from PyQt5 import QtCore, QtGui
-from new_window import NewWindow
-from utils import *
+
 
 class IntegratedApp(QMainWindow):
     def __init__(self):
