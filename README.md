@@ -37,6 +37,7 @@ To set up this project locally, follow these steps:
 - TensorFlow  2.12.1
 - PIL
 - numpy
+- Pytorch
 
 
 ## License
