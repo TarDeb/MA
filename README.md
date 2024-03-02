@@ -1,4 +1,4 @@
-<![GUI1ff](file/ma1.png)>
+<!![GUI1ff](file/ma1.png)
 # Image Processing Application
 
 This application is designed for advanced image processing tasks, with a focus on correcting image distortion and retrieving GPS coordinates from images. Built with Python, it integrates technologies like OpenCV, TensorFlow, PyQt5, and others to deliver a comprehensive tool for image analysis and processing.
