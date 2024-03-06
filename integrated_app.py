@@ -1,9 +1,9 @@
-from utils import *
-from new_window import NewWindow
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QWidget, QFileDialog, QProgressBar
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtCore import QUrl
 from PyQt5 import QtCore, QtGui
+from new_window import NewWindow
+from utils import *
 
 class IntegratedApp(QMainWindow):
     def __init__(self):
@@ -52,6 +52,16 @@ class IntegratedApp(QMainWindow):
 
         # Open separate window button
         self.new_window_button = QPushButton('Panel Detect', self)
+
+
+
+        #################
+        # self.new_button = QPushButton('CSV', self)
+        #
+        # self.new_button.clicked.connect(self.create_CSV)
+        #  # Assuming you have a method to handle the button click
+        # self.new_button.setFixedSize(120, 30)
+        ###################
         self.new_window_button.clicked.connect(self.open_new_window)
         self.new_window_button.setFixedSize(120, 30)
         img_layout.addWidget(self.new_window_button, alignment=QtCore.Qt.AlignCenter)
@@ -94,7 +104,6 @@ class IntegratedApp(QMainWindow):
         btn_select_input = QPushButton('Select Input Folder', self)
         btn_select_input.setFixedSize(250, 30)
         btn_select_input.clicked.connect(self.set_input_folder)
-       
         btn_select_output = QPushButton('Select Output Folder', self)
         btn_select_output.setFixedSize(250, 30)
         btn_select_output.clicked.connect(self.set_output_folder)
@@ -178,9 +187,10 @@ class IntegratedApp(QMainWindow):
         coords = get_gps_coordinates(image_path)
         if coords:
             lat, lon = coords
+            ajust_lat = lat +  0.00011
             self.image_coords_label.setText(
                 f"<b><font color='blue'>Coordinates: Lat: {lat:.5f}, Lon: {lon:.5f}</font></b>")
-            self.load_google_maps(lat, lon)
+            self.load_google_maps(ajust_lat, lon)
         else:
             self.image_coords_label.setText(f"<font color='red'>Coordinates: Not Available</font></b>")
 
@@ -204,16 +214,22 @@ class IntegratedApp(QMainWindow):
         else:
             image = cv2.imread(image_path)
 
+        # Convert the color from BGR to RGB
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         pixmap = nparray_to_qpixmap(image)
 
+        # Update the UI elements with the image information
         self.image_name_label.setText(f"Image Name: {filename}")
         self.image_label.setPixmap(pixmap.scaled(800, 600, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation))
 
+        # Get GPS coordinates from the image metadata
         coords = get_gps_coordinates(image_path)
         if coords:
             lat, lon = coords
-            self.load_google_maps(lat, lon)
+            # Adjust latitude and longitude slightly
+            ajust_lat = lat + 0.00011# Slightly larger adjustment for latitude
+            # Load the adjusted coordinates into Google Maps
+            self.load_google_maps(ajust_lat, lon)
 
     def prev_image(self):
         self.current_index -= 1
@@ -227,4 +243,7 @@ class IntegratedApp(QMainWindow):
         self.detection_window = NewWindow()  # Create the detection window
         self.detection_window.setGeometry(250, 100, 800, 600)  # Set geometry for the new window
         self.detection_window.show()
+
+
+
 
