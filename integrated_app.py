@@ -5,7 +5,6 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtCore import QUrl
 from PyQt5 import QtCore, QtGui
 
-
 class IntegratedApp(QMainWindow):
     def __init__(self):
         super().__init__()
