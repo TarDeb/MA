@@ -245,5 +245,5 @@ class IntegratedApp(QMainWindow):
         self.detection_window.show()
 
 
-
+###
 
