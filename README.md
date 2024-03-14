@@ -7,7 +7,7 @@ This application is designed for advanced image processing tasks, with a focus o
 - Corrects distortion in images using predefined parameters.
 - Retrieves and displays GPS coordinates embedded in images.
 - Processes multiple images in batch mode.
-- Provides a user-friendly GUI for easy interaction.
+- Provides a user-friendly GUI for easy interaction. QT
 - Utilizes TensorFlow for advanced image processing tasks.
 - Displays images and their locations on Google Maps.
 this repository contains model.ipynb
