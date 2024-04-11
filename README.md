@@ -1,33 +1,17 @@
 <!![GUI1ff](file1/ma1.png)
-# Image Processing Application
+#  Integration von TensorFlow und YOLOv8 für die Analyse von Drohnen Thermobildern von Photovoltaikanlagen
 
-This application is designed for advanced image processing tasks, with a focus on correcting image distortion and retrieving GPS coordinates from images. Built with Python, it integrates technologies like OpenCV, TensorFlow, PyQt5, and others to deliver a comprehensive tool for image analysis and processing.
+This project investigates the application of deep learning techniques, in particular TensorFlow and YOLOv8, for the detection of solar modules and the classification of defects in photovoltaic panels. By integrating drone technology and thermographic image analysis, an advanced approach for the inspection of solar installations is presented. The work includes creation of a dataset and image pre-processing, separate detection of each module, classification into defined defect categories and the development of a user-friendly GUI to visualize the results. This approach aims to improve the efficiency and longevity of solar installations and offers innovative solutions for renewable energy technologies.
 
 ## Features
 - Corrects distortion in images using predefined parameters.
 - Retrieves and displays GPS coordinates embedded in images.
 - Processes multiple images in batch mode.
 - Provides a user-friendly GUI for easy interaction. QT
-- Utilizes TensorFlow for advanced image processing tasks.
 - Displays images and their locations on Google Maps.
-this repository contains model.ipynb
+- 
 
-## Installation
 
-To set up this project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/[your-username]/Image-Processing-App.git
-   ```
-2. Navigate to the cloned directory:
-   ```bash
-   cd Image-Processing-App
-   ```
-3. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Dependencies
 
@@ -48,4 +32,3 @@ This project is [MIT licensed](https://github.com/[your-username]/Image-Processi
 
 Created by Tarek Debich 
 tarek.debich@outlook.com
-debich@dronow.io
