@@ -2,12 +2,6 @@ import numpy as np
 
 
 
-# Assuming the image's matrix data was in the same order as described in the image
-
-# and interpreting the provided values as accurately as possible from the image.
-
-
-
 # Normalized confusion matrix values extracted from the image
 
 matrix = np.array([
@@ -26,7 +20,7 @@ matrix = np.array([
 
 
 
-# Function to calculate precision, recall, and F1 score for all classes
+# precision, recall, and F1 score for all classes
 
 def calculate_metrics(matrix):
 
