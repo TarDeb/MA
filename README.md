@@ -24,11 +24,6 @@ This project investigates the application of deep learning techniques, in partic
 - Pytorch
 
 
-## License
-
-This project is [MIT licensed](https://github.com/[your-username]/Image-Processing-App/blob/main/LICENSE).
-
-## Contact
 
 Created by Tarek Debich 
 tarek.debich@outlook.com
