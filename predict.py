@@ -16,11 +16,9 @@ probs = results[0].probs.numpy()
 #print(probs)
 top1_index = results[0].probs.top1
 
-# Get the highest probability (top1conf)
+# 
 top1_probability = results[0].probs.top1conf
 
-# Use the index to get the class name from the names_dict
 predicted_class_name = names_dict[top1_index]
 
-# Print the predicted class name and its probability
 print(f"Predicted class: {predicted_class_name}, Probability: {top1_probability}")
