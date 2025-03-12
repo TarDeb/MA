@@ -27,3 +27,5 @@ This project investigates the application of deep learning techniques, in partic
 
 Created by Tarek Debich 
 tarek.debich@outlook.com
+https://link.springer.com/chapter/10.1007/978-3-031-77918-3_5
+
