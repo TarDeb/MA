@@ -14,9 +14,8 @@ App
 - Processes multiple images in batch mode.
 - Provides a user-friendly GUI for easy interaction. QT
 - Displays images and their locations on Google Maps.
-- 
-
-
+Data to train-test-valid
+https://www.kaggle.com/datasets/tarekdebich/data-class-pv
 
 ## Dependencies
 
